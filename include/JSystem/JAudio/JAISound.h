@@ -62,6 +62,10 @@ namespace JAInter {
     class StreamParameter;
 }
 
+namespace JASystem {
+    class TTrack;
+}
+
 class JAISound {
 public:
     struct PositionInfo_t {
@@ -147,7 +151,7 @@ public:
     void getPrevSound() {}
     void getPriority() {}
     void getStatus() {}
-    void getTrack() {}
+    JASystem::TTrack* getTrack() {}
     void getTrans() {}
     void getWait() {}
     void incPlayGameFrameCounter() {}
