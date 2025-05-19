@@ -323,7 +323,7 @@ void daMachine_c::attack() {
 
     switch (field_0xc78) {
     case 0:
-        if(field_0xbd0.Cross(&field_0xbf0,&xyz) !=0) {
+        if(field_0xab8.Cross(&field_0xbf0,&xyz) !=0) {
             field_0xc78 = 1;
             return;
         }
@@ -350,9 +350,9 @@ void daMachine_c::set_cube() {
     mDoMtx_stack_c::YrotM(current.angle.y);
     mDoMtx_stack_c::multVec(&xyz2, &xyz2);
     mDoMtx_stack_c::multVec(&xyz1, &xyz1);
-    field_0xbd0.GetStart() = xyz1;
-    field_0xbd0.GetEnd() = xyz2;
-    field_0xbd0.SetR(200.0f);
+    field_0xab8.GetStart() = xyz1;
+    field_0xab8.GetEnd() = xyz2;
+    field_0xab8.SetR(200.0f);
 }
 
 /* 00001330-0000144C       .text set_body__11daMachine_cFv */
